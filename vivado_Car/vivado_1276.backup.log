@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jul 17 13:27:53 2019
+# Process ID: 1276
+# Current directory: E:/xujinyi/spartan_cam_UART_ImgPro_PID/spartan_cam
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1268 E:\xujinyi\spartan_cam_UART_ImgPro_PID\spartan_cam\spartan_cam.xpr
+# Log file: E:/xujinyi/spartan_cam_UART_ImgPro_PID/spartan_cam/vivado.log
+# Journal file: E:/xujinyi/spartan_cam_UART_ImgPro_PID/spartan_cam\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/xujinyi/spartan_cam_UART_ImgPro_PID/spartan_cam/spartan_cam.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/xujinyi/spartan_cam_UART_ImgPro_PID/spartan_cam/spartan_cam.sdk/UART_Test/Debug/UART_Test.elf'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/xujinyi/spartan_cam_UART_ImgPro_PID/spartan_cam/spartan_cam.sdk/Helloworld/Debug/Helloworld.elf'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'E:/xujinyi/xilinx.com_user_PID_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/xujinyi/spartan_cam_UART_ImgPro_PID/spartan_cam/ip'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/xujinyi/xilinx.com_user_PID_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/xujinyi/test/xilinx_com_hls_hls_line_3_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/xujinyi/test/xilinx_com_hls_lite_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/vivado/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 999.273 ; gain = 269.996
+update_compile_order -fileset sources_1
+open_bd_design {E:/xujinyi/spartan_cam_UART_ImgPro_PID/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- trenz.biz:user:csi2_d_phy_rx:1.0 - csi2_d_phy_rx_0
+Adding cell -- trenz.biz:user:csi_to_axis:1.0 - csi_to_axis_0
+Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_200M
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- digilentinc.com:ip:rgb2dvi:1.2 - rgb2dvi_0
+Adding cell -- xilinx.com:module_ref:csi2dvp:1.0 - csi2dvp_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_3
+Adding cell -- xilinx.com:module_ref:bayer2rgb:1.0 - bayer2rgb_0
+Adding cell -- xilinx.com:hls:hls_line:1.0 - hls_line_0
+Adding cell -- xilinx.com:hls:lite:1.0 - lite_0
+Adding cell -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding cell -- xilinx.com:ip:ila:6.2 - ila_1
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_1: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding cell -- xilinx.com:module_ref:PID:1.0 - PID_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/locked(undef) and /rst_clk_wiz_0_200M/ext_reset_in(rst)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Successfully read diagram <system> from BD file <E:/xujinyi/spartan_cam_UART_ImgPro_PID/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd>
+startgroup
+set_property -dict [list CONFIG.kRstActiveHigh {true} CONFIG.kGenerateSerialClk {true}] [get_bd_cells rgb2dvi_0]
+WARNING: [BD 41-1684] Pin /rgb2dvi_0/aRst_n is now disabled. All connections to this pin have been removed. 
+WARNING: [BD 41-1684] Pin /rgb2dvi_0/SerialClk is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_nets clk_wiz_1_clk_out2]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets clk_wiz_1_clk_out2]'
+INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.kRstActiveHigh {true} CONFIG.kGenerateSerialClk {true}] [get_bd_cells rgb2dvi_0]'
+INFO: [Common 17-17] undo 'startgroup'
+startgroup
+endgroup
+set_property location {5 1258 986} [get_bd_cells rgb2dvi_0]
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 17 13:34:56 2019...

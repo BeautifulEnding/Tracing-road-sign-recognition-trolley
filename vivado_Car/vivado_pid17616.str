@@ -1,0 +1,2444 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 17616
+License: Customer
+
+Current time: 	Sat Jul 13 20:12:22 CST 2019
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 2 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/GAME/Vivado/install/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/GAME/Vivado/install/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	52309
+User home directory: C:/Users/52309
+User working directory: F:/Xilinx_Lab/Final_Project/spartan_cam
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/GAME/Vivado/install/Vivado
+HDI_APPROOT: D:/GAME/Vivado/install/Vivado/2018.2
+RDI_DATADIR: D:/GAME/Vivado/install/Vivado/2018.2/data
+RDI_BINDIR: D:/GAME/Vivado/install/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/52309/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/52309/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/52309/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/GAME/Vivado/install/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	F:/Xilinx_Lab/Final_Project/spartan_cam/vivado.log
+Vivado journal file location: 	F:/Xilinx_Lab/Final_Project/spartan_cam/vivado.jou
+Engine tmp dir: 	F:/Xilinx_Lab/Final_Project/spartan_cam/.Xil/Vivado-17616-DESKTOP-5DDAA0D
+
+Xilinx Environment Variables
+----------------------------
+VSSDK140Install: D:\±à³Ì\visual studio\install\VSSDK\
+XILINX: D:/GAME/Vivado/install/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/GAME/Vivado/install/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/GAME/Vivado/install/Vivado/2018.2
+XILINX_SDK: D:/GAME/Vivado/install/SDK/2018.2
+XILINX_VIVADO: D:/GAME/Vivado/install/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/GAME/Vivado/install/Vivado/2018.2
+
+
+GUI allocated memory:	214 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 571 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 54 MB (+54281kb) [00:00:06]
+// [Engine Memory]: 489 MB (+361146kb) [00:00:06]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: F:\Xilinx_Lab\Final_Project\spartan_cam\spartan_cam.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.xpr 
+// [GUI Memory]: 62 MB (+4896kb) [00:00:08]
+// [Engine Memory]: 561 MB (+50008kb) [00:00:08]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 35 MB. Current time: 7/13/19 8:12:24 PM CST
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 608 MB (+19752kb) [00:00:18]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 34 MB. Current time: 7/13/19 8:12:44 PM CST
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 651 MB (+12815kb) [00:00:33]
+// [GUI Memory]: 68 MB (+3495kb) [00:00:38]
+// [Engine Memory]: 689 MB (+6025kb) [00:00:38]
+// [Engine Memory]: 746 MB (+24181kb) [00:00:41]
+// [GUI Memory]: 72 MB (+548kb) [00:00:41]
+// [GUI Memory]: 82 MB (+6802kb) [00:00:41]
+// Tcl Message: open_project F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx_Lab/Final_Project/spartan_cam/ip'. 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/GAME/Vivado/install/Vivado/2018.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:37 . Memory (MB): peak = 1009.547 ; gain = 253.027 
+// Project name: spartan_cam; location: F:/Xilinx_Lab/Final_Project/spartan_cam; part: xc7s15ftgb196-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 92 MB (+6460kb) [00:00:46]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// a (ck): Critical Messages: addNotify
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1957 ms. Increasing delay to 3000 ms.
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 102 MB (+5432kb) [00:01:04]
+// Elapsed time: 118 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF]", 2); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// bx (ck):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0 Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0 Adding cell -- trenz.biz:user:csi2_d_phy_rx:1.0 - csi2_d_phy_rx_0 Adding cell -- trenz.biz:user:csi_to_axis:1.0 - csi_to_axis_0 Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0 Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_200M Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_0 
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1 Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0 Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0 Adding cell -- digilentinc.com:ip:rgb2dvi:1.2 - rgb2dvi_0 Adding cell -- xilinx.com:module_ref:bayer2rgb:1.0 - bayer2rgb_0 Adding cell -- xilinx.com:module_ref:colorDetect:1.0 - colorDetect_0 Adding cell -- xilinx.com:module_ref:rgb2hsv_top:1.0 - rgb2hsv_top_0 Adding cell -- xilinx.com:module_ref:csi2dvp:1.0 - csi2dvp_0 Adding cell -- xilinx.com:module_ref:dilate:1.0 - dilate_0 Adding cell -- xilinx.com:module_ref:erode:1.0 - erode_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// HMemoryUtils.trashcanNow. Engine heap size: 777 MB. GUI used memory: 60 MB. Current time: 7/13/19 8:15:09 PM CST
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10 Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10 Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram Successfully read diagram <system> from BD file <F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 809 MB (+26072kb) [00:02:57]
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1053.336 ; gain = 31.770 
+dismissDialog("Open Block Design"); // bx (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// [GUI Memory]: 108 MB (+697kb) [00:07:51]
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_data_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_data_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_data_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_data_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_data_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_data_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_data_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_data_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_data_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_data_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_RGB24_dis 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_RGB24_dis 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out2 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out2 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out2 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out2 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_de_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /dilate_0_pix_o 
+// Elapsed time: 326 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /btn_ColorExtract_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /btn_ColorExtract_0_1 
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "cons"); // OverlayTextField (Q, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Constant", 0, "Constant", 0, false); // O (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Constant", 0); // O (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Constant", 0, "Constant", 0, false, false, false, false, false, true); // O (O, ResizableWindow) - Double Click
+// bx (ck):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_interconnect_aresetn 
+// Tcl Message: endgroup 
+// HMemoryUtils.trashcanNow. Engine heap size: 844 MB. GUI used memory: 65 MB. Current time: 7/13/19 8:20:49 PM CST
+dismissDialog("Add IP"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// TclEventType: DG_GRAPH_GENERATED
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out2 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out2 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out2 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out2 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// [Engine Memory]: 850 MB (+1323kb) [00:08:42]
+// Tcl Command: 'set_property location {9.5 3107 505} [get_bd_cells xlconstant_1]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {9.5 3107 505} [get_bd_cells xlconstant_1] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (ck):  Re-customize IP : addNotify
+// r (ck): Re-customize IP: addNotify
+// Elapsed time: 11 seconds
+dismissDialog("Re-customize IP"); // O (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (ck)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 852, 175, 1130, 474, false, false, false, true, false); // fJ (k, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins xlconstant_1/dout] 
+// Tcl Message: endgroup 
+// Elapsed time: 19 seconds
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "FPGA_AR_OE1"); // X (Q, ck)
+// Tcl Command: 'set_property name FPGA_AR_OE1 [get_bd_ports dout_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name FPGA_AR_OE1 [get_bd_ports dout_0] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /system 
+// TclEventType: FILE_SET_CHANGE
+// bx (ck):  Save Design : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd>  Wrote  : <F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ui/bd_c954508f.ui>  
+dismissDialog("Save Design"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 871 MB. GUI used memory: 71 MB. Current time: 7/13/19 8:21:46 PM CST
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 400, 215, 993, 474, false, false, false, true, false); // fJ (k, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // aa (aj, Popup.HeavyWeightWindow)
+// TclEventType: DG_GRAPH_GENERATED
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "Regenerate Layout"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /system 
+// bx (ck):  Save Design : addNotify
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ui/bd_c954508f.ui>  
+// TclEventType: RSB_SAVE_DIAGRAM
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1032 ms. Increasing delay to 3000 ms.
+dismissDialog("Save Design"); // bx (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2_d_phy_rx_0_rxbyteclkhs 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2_d_phy_rx_0_rxbyteclkhs 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_rxp_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_rxp_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_rxp_0_1 
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("system.xdc", 351, 124); // ce (w, ck)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bi (ck): Synthesis is Out-of-date: addNotify
+selectButton(PAResourceQtoS.StaleRunDialog_OPEN_DESIGN, "Open Design"); // a (bi)
+// bx (ck):  Open Synthesized Design : addNotify
+dismissDialog("Synthesis is Out-of-date"); // bi (ck)
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7s15ftgb196-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 974 MB. GUI used memory: 71 MB. Current time: 7/13/19 8:22:24 PM CST
+// [Engine Memory]: 975 MB (+86184kb) [00:10:11]
+// [Engine Memory]: 1,049 MB (+26584kb) [00:10:16]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// [Engine Memory]: 1,226 MB (+130300kb) [00:10:21]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,269 MB. GUI used memory: 71 MB. Current time: 7/13/19 8:22:39 PM CST
+// [Engine Memory]: 1,563 MB (+289051kb) [00:10:31]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,574 MB. GUI used memory: 71 MB. Current time: 7/13/19 8:22:47 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,659 MB (+18869kb) [00:10:35]
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Parsing XDC File [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1_board.xdc] for cell 'system_i/clk_wiz_0/inst' Finished Parsing XDC File [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1_board.xdc] for cell 'system_i/clk_wiz_0/inst' Parsing XDC File [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1.xdc] for cell 'system_i/clk_wiz_0/inst' 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1.xdc:57] INFO: [Timing 38-2] Deriving generated clocks [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1.xdc:57] 
+// Tcl Message: get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1850.664 ; gain = 420.637 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0.xdc:57] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Generating merged BMM file for the design top 'system_wrapper'... 
+// Tcl Message: INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.sdk/UART_Test/Debug/UART_Test.elf  INFO: [Project 1-111] Unisim Transformation Summary:   A total of 338 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 2 instances   LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances   RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 240 instances   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 1884.402 ; gain = 793.813 
+// 'dP' command handler elapsed time: 32 seconds
+// Elapsed time: 28 seconds
+dismissDialog("Open Synthesized Design"); // bx (ck)
+// [GUI Memory]: 118 MB (+4920kb) [00:10:38]
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "I/O Planning", 1); // be (f, ck)
+// Package: addNotify
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (4) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 10); // z (O, ck)
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (4) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 10); // z (O, ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "AsyncRst_n_m_axis_aresetn_46624 (1) ; OUT ;  ;  ; true ; 14 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1); // z (O, ck)
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "AsyncRst_n_m_axis_aresetn_46624 (1) ; OUT ;  ;  ; true ; 14 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1); // z (O, ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "cam_iic_12642 (2) ; INOUT ;  ;  ; true ; 14 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; PULLUP ; FP_VTT_50 ; ", 2); // z (O, ck)
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "cam_iic_12642 (2) ; INOUT ;  ;  ; true ; 14 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; PULLUP ; FP_VTT_50 ; ", 2); // z (O, ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "CLK.CLK_IN1_0_12642 (1) ; IN ;  ;  ; true ; 34 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 3); // z (O, ck)
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "CLK.CLK_IN1_0_12642 (1) ; IN ;  ;  ; true ; 34 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 3); // z (O, ck)
+// [GUI Memory]: 127 MB (+3013kb) [00:11:07]
+// [GUI Memory]: 136 MB (+2802kb) [00:11:11]
+// Elapsed time: 11 seconds
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (4) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 10); // z (O, ck)
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (4) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 10); // z (O, ck)
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "I/O Ports_search"); // u (f, ck): TRUE
+// Elapsed time: 12 seconds
+setText("PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (aw, ck)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "TMDS_0_12642 (8) ; OUT ;  ;  ; true ; 34 ; TMDS_33 ; 3.3 ;  ;  ;  ; NONE ; FP_3.3_50 ; ", 5, "TMDS_0_12642 (8)", 0, true); // z (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,687 MB. GUI used memory: 96 MB. Current time: 7/13/19 8:23:59 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Wrote  : <F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd>  VHDL Output written to : F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.v VHDL Output written to : F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/sim/system.v VHDL Output written to : F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/hdl/system_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 . 
+// Tcl Message: Exporting to file F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/hw_handoff/system.hwh Generated Block Design Tcl file F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl Generated Hardware Definition File F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/synth/system.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,745 MB (+2673kb) [00:11:54]
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_xlconstant_1_0, cache-ID = d0145ccbfb55b8e2; cache size = 12.374 MB. 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Jul 13 20:24:12 2019] Launched synth_1... Run output will be captured here: F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1935.664 ; gain = 51.262 
+// 'k' command handler elapsed time: 22 seconds
+// Elapsed time: 16 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h (cM, ck)
+// [GUI Memory]: 143 MB (+810kb) [00:12:01]
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,765 MB. GUI used memory: 79 MB. Current time: 7/13/19 8:24:15 PM CST
+// Engine heap size: 1,765 MB. GUI used memory: 79 MB. Current time: 7/13/19 8:24:15 PM CST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// bx (ck):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bx (ck)
+// TclEventType: DG_GRAPH_GENERATED
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (ck): Re-customize IP: addNotify
+// Elapsed time: 27 seconds
+dismissDialog("Re-customize IP"); // r (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 1039ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 276ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 41 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (ck):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7s15ftgb196-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 81 MB. Current time: 7/13/19 8:25:34 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Parsing XDC File [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1_board.xdc] for cell 'system_i/clk_wiz_0/inst' Finished Parsing XDC File [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1_board.xdc] for cell 'system_i/clk_wiz_0/inst' Parsing XDC File [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1.xdc] for cell 'system_i/clk_wiz_0/inst' 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1.xdc:57] INFO: [Timing 38-2] Deriving generated clocks [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1.xdc:57] 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0.xdc:57] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Generating merged BMM file for the design top 'system_wrapper'... 
+// Tcl Message: INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.sdk/UART_Test/Debug/UART_Test.elf  INFO: [Project 1-111] Unisim Transformation Summary:   A total of 338 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 2 instances   LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances   RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 240 instances   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances  
+// Tcl Message: open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1997.742 ; gain = 62.078 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// 'dP' command handler elapsed time: 8 seconds
+dismissDialog("Open Synthesized Design"); // bx (ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "FPGA_AR_OE1 (1) ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 10); // z (O, ck)
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (FPGA_AR_OE1) elapsed time: 0.4s
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "FPGA_AR_OE1 (1) ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 10, "default (LVCMOS18)", 6, true); // z (O, ck) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {FPGA_AR_OE1[0]}]] 
+// Elapsed time: 21 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "FPGA_AR_OE1[0] ; OUT ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 11, (String) null, 3, false); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {FPGA_AR_OE1[0]} N4 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_DESIGN
+// A (ck): Out of Date Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Save Constraints : addNotify
+dismissDialog("Out of Date Design"); // A (ck)
+// Tcl Message: save_constraints 
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// 'h' command handler elapsed time: 4 seconds
+selectButton("PAResourceAtoD.ConstraintUtils_ALL_NEW_CONSTRAINTS_SAVED_OK", "OK"); // JButton (A, G)
+closeView(PAResourceOtoP.PAViews_PACKAGE, "Package"); // A
+// Device view-level: 0.0
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 44 seconds
+closeFrame(PAResourceOtoP.PAViews_IO_PORTS, "I/O Ports"); // aw (aE, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 5); // B (D, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // aa (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // aa (ck)
+selectMenuItem(PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION, "Associate ELF Files..."); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION
+// i (ck): Associate ELF Files: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (i)
+dismissDialog("Associate ELF Files"); // i (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 0); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// bx (ck):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd} 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_interconnect_aresetn 
+dismissDialog("Open Block Design"); // bx (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// f (ck): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [Timing 38-480] Writing timing data to binary archive. 
+// Tcl Message: Writing placer database... Writing XDEF routing. Writing XDEF routing logical nets. Writing XDEF routing special nets. 
+// Tcl Message: Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1997.742 ; gain = 0.000 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Jul 13 20:27:54 2019] Launched impl_1... Run output will be captured here: F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1997.742 ; gain = 0.000 
+dismissDialog("Generate Bitstream"); // bx (ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 6); // B (D, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,819 MB. GUI used memory: 100 MB. Current time: 7/13/19 8:28:04 PM CST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 7, false, false, false, false, false, true); // B (D, ck) - Double Click
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /csi2dvp_0_vdata 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out2 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_1_clk_out2 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /btn_ColorExtract_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /btn_ColorExtract_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /btn_ColorExtract_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /btn_ColorExtract_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_data_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_data_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_data_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /bayer2rgb_0_data_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rgb2hsv_top_0_HSV24 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rgb2hsv_top_0_HSV24 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rgb2hsv_top_0_HSV24 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rgb2hsv_top_0_HSV24 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rgb2hsv_top_0_HSV24 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rgb2hsv_top_0_HSV24 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rgb2hsv_top_0_HSV24 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rgb2hsv_top_0_HSV24 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rgb2hsv_top_0_HSV24 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rgb2hsv_top_0_HSV24 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rgb2hsv_top_0_HSV24 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rgb2hsv_top_0_HSV24 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rgb2hsv_top_0_HSV24 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /colorDetect_0_Binary_PreProcess 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_1_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system.xdc", 2); // k (j, ck)
+// Elapsed time: 31 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// aS (ck): Cancel Implementation: addNotify
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a (aS)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Cancel Implementation"); // aS (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectCodeEditor("system.xdc", 520, 80); // ce (w, ck)
+selectCodeEditor("system.xdc", 520, 80); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 544, 83); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 541, 118); // ce (w, ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 25 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "FPGA_AR_IOE"); // l (aQ, ck)
+selectCodeEditor("system.xdc", 522, 82); // ce (w, ck)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aI, ck)
+selectCodeEditor("system.xdc", 526, 83); // ce (w, ck)
+selectCodeEditor("system.xdc", 437, 32); // ce (w, ck)
+selectCodeEditor("system.xdc", 524, 34); // ce (w, ck)
+selectCodeEditor("system.xdc", 516, 82); // ce (w, ck)
+selectCodeEditor("system.xdc", 438, 37); // ce (w, ck)
+selectCodeEditor("system.xdc", 523, 38); // ce (w, ck)
+selectCodeEditor("system.xdc", 525, 80); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// HMemoryUtils.trashcanNow. Engine heap size: 1,832 MB. GUI used memory: 101 MB. Current time: 7/13/19 8:30:33 PM CST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // u (O, ck) - Node
+// [Engine Memory]: 1,832 MB (+503kb) [00:18:21]
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "I/O Planning", 1); // be (f, ck)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cM, ck)
+// bx (ck):  Reloading : addNotify
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd] 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,832 MB. GUI used memory: 83 MB. Current time: 7/13/19 8:30:43 PM CST
+// Engine heap size: 1,832 MB. GUI used memory: 84 MB. Current time: 7/13/19 8:30:43 PM CST
+// Tcl Message: refresh_design 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// TclEventType: DEBUG_GRAPH_STALE
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// Tcl Message: Parsing XDC File [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1_board.xdc] for cell 'system_i/clk_wiz_0/inst' Finished Parsing XDC File [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1_board.xdc] for cell 'system_i/clk_wiz_0/inst' Parsing XDC File [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1.xdc] for cell 'system_i/clk_wiz_0/inst' 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1.xdc:57] INFO: [Timing 38-2] Deriving generated clocks [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_0_1/system_clk_wiz_0_1.xdc:57] 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_clk_wiz_1_0/system_clk_wiz_1_0.xdc:57] 
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,832 MB. GUI used memory: 81 MB. Current time: 7/13/19 8:30:47 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: Finished Parsing XDC File [F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/constrs_1/new/system.xdc] Parsing XDC File [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/src/rgb2dvi_clocks.xdc] for cell 'system_i/rgb2dvi_0/U0' Finished Parsing XDC File [f:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_1/src/rgb2dvi_clocks.xdc] for cell 'system_i/rgb2dvi_0/U0' 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Generating merged BMM file for the design top 'system_wrapper'... 
+// Tcl Message: INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.sdk/UART_Test/Debug/UART_Test.elf  
+// Device view-level: 0.0
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2017.242 ; gain = 19.500 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+dismissDialog("Reloading"); // bx (ck)
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "I/O Planning", 1); // be (f, ck)
+selectTreeTable(PAResourceOtoP.PackageTreePanel_PACKAGE_TREE_PANEL, "Bankless Pins (74) ; 0 ; false ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4, "Bankless Pins (74)", 0, true); // aw (O, ck) - Node
+expandTreeTable(PAResourceOtoP.PackageTreePanel_PACKAGE_TREE_PANEL, "Bankless Pins (74) ; 0 ; false ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4); // aw (O, ck)
+collapseTreeTable(PAResourceOtoP.PackageTreePanel_PACKAGE_TREE_PANEL, "Bankless Pins (74) ; 0 ; false ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4); // aw (O, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 7, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: RDIResourceCommand.RDICommands_FIND
+// g (ck): Find: addNotify
+dismissDialog("Find"); // g (ck)
+selectCodeEditor("system.xdc", 463, 45); // ce (w, ck)
+// Elapsed time: 10 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aQ, ck)
+selectCodeEditor("system.xdc", 532, 92); // ce (w, ck)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aI, ck)
+selectButton(RDIResource.HToolBar_COLLAPSE_ALL, "Package Pins_collapse_all"); // B (f, ck)
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "Package Pins_search"); // u (f, ck): TRUE
+// Elapsed time: 13 seconds
+setText("PAResourceOtoP.PackageTreePanel_PACKAGE_TREE_PANEL_SEARCH_FIELD", "FPGA"); // OverlayTextField (aw, ck)
+closeFrame(PAResourceOtoP.PAViews_PACKAGE_PINS, "Package Pins"); // aw (aE, ck)
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "Default Layout", 0); // be (f, ck)
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "I/O Planning", 1); // be (f, ck)
+selectCodeEditor("system.xdc", 501, 26); // ce (w, ck)
+selectCodeEditor("system.xdc", 419, 84); // ce (w, ck)
+selectCodeEditor("system.xdc", 546, 91); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// bx (ck):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bx (ck)
+// [GUI Memory]: 151 MB (+217kb) [00:20:05]
+selectCodeEditor("system.xdc", 525, 25); // ce (w, ck)
+selectCodeEditor("system.xdc", 524, 24); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 571, 12); // ce (w, ck)
+selectCodeEditor("system.xdc", 568, 37); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 209, 63); // ce (w, ck)
+selectCodeEditor("system.xdc", 209, 63, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// Elapsed time: 13 seconds
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "FPGA_AR_OE1"); // X (Q, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system.xdc", 2); // k (j, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("system.xdc", 431, 66); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 504, 65); // ce (w, ck)
+selectCodeEditor("system.xdc", 580, 155); // ce (w, ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V (q, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION, "Associate ELF Files..."); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION
+// i (ck): Associate ELF Files: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (i)
+dismissDialog("Associate ELF Files"); // i (ck)
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// [GUI Memory]: 159 MB (+1092kb) [00:21:11]
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Jul 13 20:33:28 2019] Launched synth_1... Run output will be captured here: F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.runs/synth_1/runme.log [Sat Jul 13 20:33:28 2019] Launched impl_1... Run output will be captured here: F:/Xilinx_Lab/Final_Project/spartan_cam/spartan_cam.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system.xdc", 2); // k (j, ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 667ms to process. Increasing delay to 2000 ms.
+// [GUI Memory]: 169 MB (+2065kb) [00:22:58]
+// Elapsed time: 121 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// TclEventType: RUN_STEP_COMPLETED
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_200M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// Elapsed time: 98 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF]", 3); // B (D, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 188 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xlconstant_0_dout 

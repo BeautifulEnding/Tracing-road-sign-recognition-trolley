@@ -1,0 +1,554 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jul 17 01:00:57 2019
+# Process ID: 9964
+# Current directory: E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.runs/system_PID_0_0_synth_1
+# Command line: vivado.exe -log system_PID_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_PID_0_0.tcl
+# Log file: E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.runs/system_PID_0_0_synth_1/system_PID_0_0.vds
+# Journal file: E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.runs/system_PID_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_PID_0_0.tcl -notrace
+Command: synth_design -top system_PID_0_0 -part xc7s15ftgb196-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9468 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 449.223 ; gain = 103.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_PID_0_0' [e:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_PID_0_0/synth/system_PID_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'PID' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:23]
+	Parameter P bound to: 1 - type: integer 
+	Parameter I bound to: 0 - type: integer 
+	Parameter D bound to: 2 - type: integer 
+	Parameter M bound to: 2 - type: integer 
+	Parameter MIDLINE bound to: 640 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:44]
+WARNING: [Synth 8-6014] Unused sequential element Mclk_reg was removed.  [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:45]
+WARNING: [Synth 8-6014] Unused sequential element SumError_reg was removed.  [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+WARNING: [Synth 8-6014] Unused sequential element SumError_reg was removed.  [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'PID' (1#1) [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'system_PID_0_0' (2#1) [e:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/bd/system/ip/system_PID_0_0/synth/system_PID_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 503.430 ; gain = 157.285
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 503.430 ; gain = 157.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 503.430 ; gain = 157.285
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 780.820 ; gain = 1.992
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 780.820 ; gain = 434.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 780.820 ; gain = 434.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 780.820 ; gain = 434.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:82]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 780.820 ; gain = 434.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PID 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[31]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[30]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[29]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[28]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[27]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[26]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[25]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[24]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[23]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[22]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[21]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[20]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[19]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[18]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[17]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[16]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[15]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[14]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[13]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[12]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[11]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[10]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[9]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[8]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[7]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[4]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[3]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[1]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[0]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[31]__0) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[30]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[30]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[29]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[29]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[28]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[28]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[27]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[27]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[26]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[26]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[25]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[25]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[24]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[24]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[23]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[23]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[22]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[22]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[21]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[21]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[20]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[20]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[19]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[19]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[18]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[18]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[17]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[17]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[16]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[16]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[15]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[15]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[14]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[14]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[13]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[13]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[12]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[12]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[11]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[11]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[10]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[10]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[9]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[9]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[8]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[8]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[7]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[7]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[4]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[4]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[3]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[3]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[1]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[1]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/DifError_reg[0]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/DifError_reg[0]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[31]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[30]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[29]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[28]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[27]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[26]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[25]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[24]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[23]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[22]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[21]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[20]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[19]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[18]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[17]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[16]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[15]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[14]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[13]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[12]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[11]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[10]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[9]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[8]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[7]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[4]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[3]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[1]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[0]) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[31]__0) is unused and will be removed from module system_PID_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[30]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[30]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[29]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[29]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[28]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[28]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[27]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[27]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[26]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[26]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[25]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[25]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[24]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[24]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[23]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[23]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[22]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[22]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[21]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[21]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[20]__0) is unused and will be removed from module system_PID_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[20]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+INFO: [Synth 8-3332] Sequential element (inst/LastError_reg[19]__0) is unused and will be removed from module system_PID_0_0.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[19]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[18]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[17]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[16]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[15]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[14]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[13]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[12]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[11]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[10]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'inst/LastError_reg[9]__0/Q' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+INFO: [Common 17-14] Message 'Synth 8-3352' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 780.820 ; gain = 434.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 789.746 ; gain = 443.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 789.746 ; gain = 443.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5966] Removing register instance (\inst/DifError_reg[6]__0 ) from module (system_PID_0_0) as it has self-loop and (\inst/DifError_reg[6] ) is actual driver [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-5966] Removing register instance (\inst/DifError_reg[5]__0 ) from module (system_PID_0_0) as it has self-loop and (\inst/DifError_reg[5] ) is actual driver [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-5966] Removing register instance (\inst/DifError_reg[2]__0 ) from module (system_PID_0_0) as it has self-loop and (\inst/DifError_reg[2] ) is actual driver [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:39]
+INFO: [Synth 8-5966] Removing register instance (\inst/LastError_reg[6]__0 ) from module (system_PID_0_0) as it has self-loop and (\inst/LastError_reg[6] ) is actual driver [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+INFO: [Synth 8-5966] Removing register instance (\inst/LastError_reg[5]__0 ) from module (system_PID_0_0) as it has self-loop and (\inst/LastError_reg[5] ) is actual driver [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+INFO: [Synth 8-5966] Removing register instance (\inst/LastError_reg[2]__0 ) from module (system_PID_0_0) as it has self-loop and (\inst/LastError_reg[2] ) is actual driver [E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.srcs/sources_1/new/PID.v:48]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 799.789 ; gain = 453.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 799.789 ; gain = 453.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 799.789 ; gain = 453.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 799.789 ; gain = 453.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 799.789 ; gain = 453.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 799.789 ; gain = 453.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 799.789 ; gain = 453.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    25|
+|2     |LUT1   |    27|
+|3     |LUT2   |    55|
+|4     |LUT3   |     7|
+|5     |LUT4   |     2|
+|6     |FDRE   |     6|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   122|
+|2     |  inst   |PID    |    94|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 799.789 ; gain = 453.645
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 168 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 799.789 ; gain = 176.254
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 799.789 ; gain = 453.645
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+124 Infos, 5 Warnings, 156 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 807.781 ; gain = 474.363
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.runs/system_PID_0_0_synth_1/system_PID_0_0.dcp' has been generated.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.runs/system_PID_0_0_synth_1/system_PID_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_PID_0_0_utilization_synth.rpt -pb system_PID_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 807.781 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 17 01:01:38 2019...

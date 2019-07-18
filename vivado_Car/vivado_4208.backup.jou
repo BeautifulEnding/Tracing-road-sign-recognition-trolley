@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jul 18 09:03:06 2019
+# Process ID: 4208
+# Current directory: E:/xujinyi/test/spartan_cam_2/spartan_cam
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11844 E:\xujinyi\test\spartan_cam_2\spartan_cam\spartan_cam.xpr
+# Log file: E:/xujinyi/test/spartan_cam_2/spartan_cam/vivado.log
+# Journal file: E:/xujinyi/test/spartan_cam_2/spartan_cam\vivado.jou
+#-----------------------------------------------------------start_gui
+open_project E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.xpr
+oupdate_compile_order -fileset sources_1
+am_2/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd}
+update_compile_order -fileset sources_1

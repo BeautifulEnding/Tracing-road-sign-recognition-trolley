@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# 
+# Start of session at: Wed Jul 17 00:53:28 2019
+# Process ID: 5680
+# Current directory: E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.sdk/webtalk/webtalk.log
+# Journal file: E:/xujinyi/test/spartan_cam_2/spartan_cam/spartan_cam.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

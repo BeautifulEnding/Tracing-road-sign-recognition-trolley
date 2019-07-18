@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jul 17 13:27:53 2019
+# Process ID: 1276
+# Current directory: E:/xujinyi/spartan_cam_UART_ImgPro_PID/spartan_cam
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1268 E:\xujinyi\spartan_cam_UART_ImgPro_PID\spartan_cam\spartan_cam.xpr
+# Log file: E:/xujinyi/spartan_cam_UART_ImgPro_PID/spartan_cam/vivado.log
+# Journal file: E:/xujinyi/spartan_cam_UART_ImgPro_PID/spartan_cam\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/xujinyi/spartan_cam_UART_ImgPro_PID/spartan_cam/spartan_cam.xpr
+update_compile_order -fileset sources_1
+open_bd_design {E:/xujinyi/spartan_cam_UART_ImgPro_PID/spartan_cam/spartan_cam.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.kRstActiveHigh {true} CONFIG.kGenerateSerialClk {true}] [get_bd_cells rgb2dvi_0]
+delete_bd_objs [get_bd_nets clk_wiz_1_clk_out2]
+endgroup
+undo
+startgroup
+endgroup
+set_property location {5 1258 986} [get_bd_cells rgb2dvi_0]
